@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">InfoGuideZoo</string>
+
+
+    <!--Array resources-->
+    <string-array name="language_setting">
+        <item>English</item>
+        <item>Korean</item>
+        <item>Chinese</item>
+        <item>Spanish</item>
+        <item>Japanese</item>
+        <item>Malay</item>
+    </string-array>
+
+    <string-array name="language_setting_value">
+        <item>english</item>
+        <item>korean</item>
+        <item>chinese</item>
+        <item>spanish</item>
+        <item>japanese</item>
+        <item>malay</item>
+
+    </string-array>
+
+    <string name="select_any_one">Select Any One</string>
+    <string name="vanggey">Restaurant Vanggey</string>
+    <string name="madfoon">Madfoon Palace</string>
+    <string name="burgers">Wayback Burgers</string>
+    <string name="makan">Makan Culture</string>
+
+    <string name="price">Price: RM %1$d.00 </string>
+
+
+    <string name="start">START</string>
+    <string name="selectLanguage">SELECT LANGUAGE</string>
+    <string name="lunchTime">SET LUNCH TIME</string>
+    <string name="map">MAP</string>
+
+</resources>

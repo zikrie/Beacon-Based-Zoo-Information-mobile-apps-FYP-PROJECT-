@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.heszrave.touristguide">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC1IL-ZXauHEctXGkFjHwTyLc1YQq9aWck" />
+
+        <activity android:name=".MainActivity">
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ArtActivity" />
+
+        <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> -->
+        <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> -->
+
+        <activity android:name=".DisplayArt" />
+        <activity android:name=".SettingPreferences" />
+
+        <receiver android:name=".alarmLunchTime.AlarmReceiver" />
+
+        <service
+            android:name=".alarmLunchTime.RingtonePlayingService"
+            android:enabled="true" />
+        <!-- <activity android:name=".DisplayArtFragment"/> -->
+        <!-- <activity android:name=".SettingPreference"/> -->
+        <activity android:name=".alarmLunchTime.LunchTimeAlert" />
+        <activity android:name=".zooMap.GoogleMapsActivity" />
+        <activity android:name=".dropdownListFood.DropdownLunch" />
+        <activity android:name=".dropdownListFood.FoodDetailsActivity" />
+        <activity android:name=".dropdownListFood.GoogleMapsRestaurantVenggey" />
+        <activity android:name=".dropdownListFood.GoogleMapsMadfoonPalace" />
+        <activity android:name=".dropdownListFood.GoogleMapsWaybackBurgers" />
+        <activity android:name=".dropdownListFood.GoogleMapsMakanCulture" />
+        <activity android:name=".info" />
+
+    </application>
+
+</manifest>

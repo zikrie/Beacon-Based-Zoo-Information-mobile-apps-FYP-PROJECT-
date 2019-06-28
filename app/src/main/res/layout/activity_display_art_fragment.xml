@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_display_art_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.heszrave.touristguide.DisplayArtFragment">
+
+
+    <TextView
+        android:id="@+id/artTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Title"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/artImage"
+                android:layout_width="320dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+
+              <ImageButton
+                    android:id="@+id/icon_play_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/play_btn_icon"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:background="@null"
+                    />
+                <ImageButton
+                    android:id="@+id/icon_pause_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/pause_btn_icon"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:background="@null"
+
+                    />
+                <ImageButton
+                    android:id="@+id/icon_stop_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/stop_btn_icon"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:background="@null"
+
+                    />
+
+
+           </LinearLayout>
+
+           <TextView
+               android:id="@+id/artDescription"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:text="Description goes here"
+               android:textColor="@android:color/black"
+               android:gravity="center_horizontal"
+               android:textSize="18sp"
+               />
+
+           <Button
+               android:id="@+id/backButton"
+               android:layout_width="80dp"
+               android:layout_height="50dp"
+               android:text="HOME"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="20dp"/>
+
+
+       </LinearLayout>
+
+   </ScrollView>
+
+</LinearLayout>
